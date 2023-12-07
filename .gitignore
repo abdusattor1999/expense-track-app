@@ -1,3 +1,4 @@
 /env
 env/
 guide.pdf
+db.sqlite3

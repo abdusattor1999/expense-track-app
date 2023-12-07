@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}
+Home
+{% endblock title %}
+
+{% block content %}
+<div class="container">
+    <a href="{% url 'expenses:book_list' %}" class="button">Kitoblar</a><br>
+    <a href="{% url 'expenses:EditorChartView' %}" class="button">Statistika</a><br>
+    <a href="{% url 'expenses:Import_Excel_pandas' %}" class="button">Book Upload Via Spreadsheet</a><br>
+    <a href="/admin/" class="button">Dashboard</a>
+</div>
+
+{% endblock content %}

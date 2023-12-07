@@ -1,0 +1,14 @@
+{% block title %}
+Kitoblar
+{% endblock title %}
+
+{% block content %}
+{% for book in books %}
+    <h1>{{book.title}}</h1>
+    <h2>{{book.publisher}}</h2>
+    <h3>{{book.authors}}</h3>
+    <br><br><br>
+{% endfor %}
+
+<a href="{% url 'index' %}">Bosh menuga qaytish</a>
+{% endblock content %}
